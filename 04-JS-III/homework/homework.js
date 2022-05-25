@@ -96,6 +96,12 @@ function promedioResultadosTest(resultadosTest) {
   // Itera (en un bucle) los elementos del array, calcula y devuelve el promedio de puntajes
   // Tu código:
   return agregarNumeros(resultadosTest) / resultadosTest.length;
+
+  //var suma = 0;
+  //for(var i = 0; i < array.length; i++) {
+  //  suma = suma + array[i];
+  //}
+  //console.log(suma/array.length);
 }
 
 
@@ -110,6 +116,13 @@ function numeroMasGrande(numeros) {
     }
   }
   return maximo;
+
+  /*
+  var array = [11,8,3,2]
+   m = Math.max(...array);
+   console.log(m);
+  */
+
 }
 
 
@@ -137,7 +150,9 @@ function cuentoElementos(arreglo){
     }
   }
   return contador
-
+ /*
+ console.log(array.filter(i => i > 18));
+ */
 }
 
 
