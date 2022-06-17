@@ -27,12 +27,10 @@ function incrementarPorUno(array) {
   // y devuelve el array
   // Tu código:
   var nuevoArray = [];
-  for(var i = 0; i < array.length; i++) {
-    nuevoArray[i] = array[i] + 1;
+  for(var i = 0; i < array.length; i++) { // iterar desde i=0 hasta i<largo del array e incrementar de uno en uno
+    nuevoArray[i] = array[i] + 1;        //  en la variable nuevo array guardar todas las iteraciones(i) de las iteraciones de array mas uno
   }
-
   return nuevoArray;
-
 }
 
 
@@ -72,11 +70,11 @@ function arrayContiene(array, elemento) {
   for(var i = 0; i < array.length; i++) {
     if(array[i] === elemento) {
       return true;
+    }else {
+      return false;
     }
-  }
-  return false;
 }
-
+}
 
 function agregarNumeros(numeros) {
   // "numeros" debe ser un arreglo de enteros (int/integers)
@@ -98,7 +96,7 @@ function promedioResultadosTest(resultadosTest) {
   return agregarNumeros(resultadosTest) / resultadosTest.length;
 
   //var suma = 0;
-  //for(var i = 0; i < array.length; i++) {
+  //for(var i = 0; i < array.length; i++){
   //  suma = suma + array[i];
   //}
   //console.log(suma/array.length);
@@ -145,13 +143,13 @@ function cuentoElementos(arreglo){
 
   let contador = 0;
   for (let i = 0; i < arreglo.length ; i++) {
-    if(arreglo[i] > 18){
-      contador++
+    if(arreglo[i] > 18){  //si se cumple esta condicion
+      contador++          // el contador se aumenta en uno
     }
   }
-  return contador
+  return contador  // este metodo arroja la cantidad de numeros que son mayores a 18
  /*
- console.log(array.filter(i => i > 18));
+ console.log(array.filter(i => i > 18));  este metodo arroja cuales son los numeros del arreglo mayores a 18
  */
 }
 
@@ -174,8 +172,8 @@ function empiezaConNueve(n) {
   //Desarrolle una función que recibe como parámetro un número entero n. Debe retornar true si el entero 
   //inicia con 9 y false en otro caso.
   //Escribe tu código aquí
-  let num = n.toString()
-  if(num.charAt(0) === "9"){
+  let num = n.toString()    // volvenos n un string
+  if(num.charAt(0) === "9"){ // verificamos si el primer numero (indice 0) es 9
     return true
   }
   return false
@@ -217,7 +215,7 @@ function mesesDelAño(array) {
 
 function mayorACien(array) {
   //La función recibe un array con enteros entre 0 y 200. Recorrer el array y guardar en un nuevo array sólo los
-  //valores mayores a 100 (no incluye el 100). Finalmente devolver el nuevo array.
+  //valores mayores a 100 (no incluye el 100).Finalmente devolver el nuevo array.
   // Tu código:
   var nuevoArray = [];
   for(let i= 0; i < array.length; i++) {
@@ -237,6 +235,7 @@ function breakStatement(numero) {
   //devolver: "Se interrumpió la ejecución"
   //Pista: usá el statement 'break'
   // Tu código:
+
   var array = [];
   var suma = numero;
   for(var i= 0; i<10; i++) {
