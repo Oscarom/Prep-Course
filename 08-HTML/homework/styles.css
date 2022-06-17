@@ -1,17 +1,28 @@
 img  {
     width: 400px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
 }
 
 #thirdDiv{
-   height: 600px;
-   width: 500px;
+   height: 6000x;
+   width: 1225px;
    background-color: deeppink;
    padding: 50px;
    border-color: white;
    border-style: dashed;
+   text-align: center;
+   display: flex;
+   justify-content: center;
+   align-items: center;
 }
 
 #spanID{
    font-size: 18px;
    margin: 50px;
+}
+body{
+    text-align: center;
 }
